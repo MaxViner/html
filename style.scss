@@ -5,9 +5,13 @@ $secondary-color: #F16D7F ;
 $text-white:#FFFFFF;
 $gray-text:#9F9F9F;
 $gray-bg:#F8F8F8;
-
+a{
+    text-decoration: none;
+    color: $secondary-color;
+}
 *{
     box-sizing: border-box;
+    margin: 0 auto;
 }
 // npx node-sass styles.scss styles.css
 body{
@@ -148,7 +152,7 @@ header{
     background-color: #F1E4E6;
     &__img{
         width: 50%;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             display: none;
             height: 363px;
         }
@@ -162,7 +166,7 @@ header{
         text-align: left;
         letter-spacing: 0em;
         white-space: nowrap;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             padding: 0;
             width: 100%;
             display: flex;
@@ -179,7 +183,7 @@ header{
                 font-size: 48px;
                 font-weight: 900;
                 line-height: 58px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                 }
                 font-size: 38px;
                 font-weight: 900;
@@ -194,7 +198,7 @@ header{
                 font-size: 38px;
                 font-weight: 900;
                 line-height: 46px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     font-family: Lato;
                     font-size: 20px;
                     font-weight: 700;
@@ -220,7 +224,7 @@ header{
 
     margin: 0 auto;
     margin-top: 65px;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         width: 100%;
     }
     &__list{
@@ -231,7 +235,7 @@ header{
         grid-template-areas: 'forWomen forMen forKids'
                              'Trendy Trendy   Trendy';
         gap: 30px;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -245,7 +249,7 @@ header{
                 font-family: Lato;
                 text-align: center;
                 letter-spacing: 0em;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     width: 100%;
                 }
                 >span{
@@ -268,7 +272,7 @@ header{
                 background-color: #211616B2;
             }
             &__forMen{
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     width: 100%;
                     background-size: cover;
 
@@ -279,7 +283,7 @@ header{
                 height: 260px;
                 background: url('./assets/img/collection/forMen.png');
             }
-            &__forWomen{@media screen and(max-width:768px) {
+            &__forWomen{@media screen and (max-width:768px) {
                 background-size: cover;
                 width: 100%;
             }
@@ -289,7 +293,7 @@ header{
                 height: 260px;
                 background: url('./assets/img/collection/foWomen.png');
             }
-            &__forKids{@media screen and(max-width:768px) {
+            &__forKids{@media screen and (max-width:768px) {
                 width: 100%;
                 background-size: cover;
 
@@ -321,7 +325,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and(max-width:1600px) {
+    @media screen and (max-width:1600px) {
         width: 98%;
     }
     button{
@@ -365,10 +369,10 @@ header{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 30px;
-        @media screen and(max-width:1600px) {
+        @media screen and (max-width:1600px) {
             grid-template-columns: repeat(2,1fr);
         }
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             grid-template-columns: repeat(1,1fr);
         }
         &__card{
@@ -447,7 +451,7 @@ header{
     align-items: center;
     color: $text-white;
     overflow: hidden;
-    @media screen and(max-width:1600px) {
+    @media screen and (max-width:1600px) {
         flex-direction: column;
     }
     &__item{
@@ -460,7 +464,7 @@ header{
         align-items: center;
         gap: 16px;
         width: 22.5%;
-        @media screen and(max-width:1600px) {
+        @media screen and (max-width:1600px) {
             padding: 0;
             width: 100%;
             margin-top: 50px;
@@ -489,7 +493,7 @@ header{
     align-items: center;
     gap: 21%;
     padding-bottom: 156px;
-    @media screen and(max-width:1600px) {
+    @media screen and (max-width:1600px) {
         flex-direction: column;
     }
     article{
@@ -502,7 +506,7 @@ header{
         align-items: center;
         text-align: center;
     }
-    @media screen and(max-width:1600px) {
+    @media screen and (max-width:1600px) {
         margin-left: 0;
 
     }
