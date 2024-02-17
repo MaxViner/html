@@ -408,7 +408,7 @@ header > span :last-child {
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 420px;
+  height: 100%;
   opacity: 0;
   background-color: rgba(33, 22, 22, 0.6980392157);
   transition: 0.5s ease-in-out;
@@ -455,7 +455,10 @@ header > span :last-child {
 .FEATURES__list__card__owerlay:hover {
   opacity: 1;
 }
-
+.FEATURES__list__card__owerlay>button {
+  cursor: pointer;
+  background: transparent;
+}
 .Advantages {
   margin-top: 95px;
   width: 100%;
@@ -643,3 +646,118 @@ footer ul li img {
 }
 
 /*# sourceMappingURL=styles.css.map */
+.cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 130px;
+  margin-bottom: 96px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+  .cart> h3 {
+    margin-left: 45vw;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+  }
+.cart-list{
+  display: flex;
+  flex-direction: column;
+  max-width: 652px;
+  margin-left: 13vw;
+  gap: 40px;
+  list-style: none;
+}
+.cart-List-item {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  gap: 5%;
+  margin-left: -30px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.459);
+}
+@media screen and (max-width: 768px) {
+  .List-item {
+    grid-template-columns: 40% 55%;
+  }
+}
+.List-item-img {
+  width: 100%;
+}
+.List-item-img img {
+  height: 100%;
+  width: 100%;
+}
+.List-item-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  gap: 0;
+}
+.List-item-data h2 {
+  width: 202px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+@media screen and (max-width: 768px) {
+  .List-item-data h2 {
+    font-size: 16px;
+    width: 145px;
+  }
+}
+.List-item-data h3 {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .List-item-data h3 {
+    font-size: 16px;
+  }
+}
+.List-item-data h3 span {
+  color: #F16D7F;
+}
+.List-item-data P {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .List-item-data P {
+    font-size: 16px;
+  }
+}
+.List-item-data P span {
+  border: 1px solid black;
+  padding: 5px;
+}
+.List-item-close {
+  position: absolute;
+  right: 22px;
+  top: 28px;
+  cursor: pointer;
+}
+.hidden{
+  display: none;
+}
